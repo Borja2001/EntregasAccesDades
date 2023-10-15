@@ -146,6 +146,9 @@ public class menu extends JFrame {
 		conPMenu.add(btnFusionar);
 	}
 
+	/**
+	 * Obri un JFileChooser per a poder elegir un directori. Li pasa el directori a la variable global path
+	 */
 	private void seleccionarDirectorio() {
 
 		JFileChooser fileChooser = new JFileChooser();
@@ -158,6 +161,9 @@ public class menu extends JFrame {
 		}
 	}
 
+	/**
+	 * Recapta tot el fitxer .txt en el directori donat, sense ordenar per les etiquetes, i els clava en el listFicheros
+	 */
 	private static void getArchives() {
 		DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy - hh:mm:ss");
 		DefaultListModel<String> listModel = new DefaultListModel<>();
@@ -181,6 +187,9 @@ public class menu extends JFrame {
 
 	}
 
+	/**
+	 * Recapta tot el fitxer .txt en el directori donat, ordenats per les etiquetes, i els clava en el listFicheros
+	 */
 	private static void getOrderedArchives() {
 		DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy - hh:mm:ss");
 		DefaultListModel<String> listModel = new DefaultListModel<>();
@@ -221,6 +230,9 @@ public class menu extends JFrame {
 
 	}
 
+	/**
+	 * Conseguix les coincidencies de tos el fitxers i diu quants en te cada un
+	 */
 	private static void getCoincidencies() {
 
 		DefaultListModel<String> listModel = new DefaultListModel<>();
@@ -268,6 +280,9 @@ public class menu extends JFrame {
 
 	}
 
+	/**
+	 * Fusiona un parell o mes de ficher per a crearne un nou amb el nom de del textbox
+	 */
 	private static void fusio() {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		if (listFicheros.getSelectedIndices().length >= 2) {
