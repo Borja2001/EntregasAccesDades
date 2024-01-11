@@ -1,2 +1,0 @@
-LAIA: https://github.com/LaClCr/2DAM_AD.git
-BORJA: https://github.com/Borja2001/EntregasAccesDades.git
